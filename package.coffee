@@ -9,6 +9,10 @@ config =
 
 	description: ""
 
+	repository:
+		type: "git"
+		url: "https://github.com/ElliotChong/full-throttle.git"
+
 	scripts:
 		"package-json": "npm run compile:package-json --silent"
 		"package-json:watch": "npm run compile:package-json:watch --silent"
