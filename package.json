@@ -2,7 +2,7 @@
     "name": "full-throttle",
     "main": "dist/index.js",
     "license": "Copyright Elliot Chong 2015+",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Throttle a method to the browser's framerate.",
     "repository": {
         "type": "git",
