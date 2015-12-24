@@ -5,24 +5,28 @@ module.exports = (p_callback, p_backupWait) ->
 	timeoutId = undefined
 	isWaiting = false
 	calledInbetween = false
+	args = undefined
 
 	checkCalled = ->
-		called = calledInbetween
+		wasCalled = calledInbetween
 
 		timeoutId = undefined
 		isWaiting = false
 		calledInbetween = false
 
-		if called is true
-			method.call @
+		if wasCalled is true
+			method.apply @, args
 
 	method = ->
+		args = arguments
+
 		if isWaiting is true
 			calledInbetween = true
 			return
 
 		isWaiting = true
-		p_callback.call @
+		p_callback.apply @, args
+		args = undefined
 
 		if window?.requestAnimationFrame?
 			timeoutId = window.requestAnimationFrame checkCalled.bind @
