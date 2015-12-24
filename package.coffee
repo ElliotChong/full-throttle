@@ -17,7 +17,7 @@ config =
 		"clean": "npm run compile:package-json --silent && npm prune && npm install && npm run test --silent"
 		"compile": "coffee --compile --output dist src"
 
-		"clean:compile": "npm run clean --silent && npm run compile --silent"
+		"clean-compile": "npm run clean --silent && npm run compile --silent"
 
 		"compile:package-json": "coffee package.coffee > package.json"
 		"compile:package-json:watch": "chokidar 'package.coffee' --command 'npm run compile:package-json --silent' --initial --throttle 1000"
