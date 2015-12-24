@@ -5,7 +5,7 @@ config =
 
 	license: "Copyright Elliot Chong 2015+"
 
-	version: "0.1.1"
+	version: "0.1.2"
 
 	description: "Throttle a method to the browser's framerate."
 
