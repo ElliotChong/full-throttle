@@ -8,13 +8,13 @@ module.exports = (p_callback, p_backupWait) ->
 	args = undefined
 
 	checkCalled = ->
-		called = calledInbetween
+		wasCalled = calledInbetween
 
 		timeoutId = undefined
 		isWaiting = false
 		calledInbetween = false
 
-		if called is true
+		if wasCalled is true
 			method.apply @, args
 
 	method = ->
