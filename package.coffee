@@ -5,7 +5,7 @@ config =
 
 	license: "MIT"
 
-	version: "0.1.2"
+	version: "0.1.3"
 
 	description: "Throttle a method to the browser's framerate."
 
