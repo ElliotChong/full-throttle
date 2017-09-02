@@ -3,7 +3,7 @@ config =
 
 	main: main = "dist/index.js"
 
-	license: "Copyright Elliot Chong 2015+"
+	license: "MIT"
 
 	version: "0.1.2"
 
