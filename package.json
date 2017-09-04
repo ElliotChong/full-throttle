@@ -2,7 +2,7 @@
     "name": "full-throttle",
     "main": "src/index.js",
     "license": "MIT",
-    "version": "0.1.4",
+    "version": "1.0.0",
     "description": "Throttle a method to the browser's framerate.",
     "repository": {
         "type": "git",
