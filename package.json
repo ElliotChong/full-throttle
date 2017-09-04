@@ -11,7 +11,10 @@
     "scripts": {
         "test": "echo 'TODO: Implement tests'"
     },
-    "keywords": [],
+    "keywords": [
+		"full-throttle",
+		"throttle"
+	],
     "author": [
         "Elliot Chong <code+full-throttle@elliotjameschong.com>"
     ]
